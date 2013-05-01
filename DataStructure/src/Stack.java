@@ -5,17 +5,24 @@ public class Stack <T>{
 	private ArrayList<T> contain; 
 	private int index ; 
 	
-	public Stack(T s){
+	public Stack(){
 		contain = new ArrayList<T>();
-		index = 0 ; 
+		index = -1 ; 
 	}
 	
-	public T pop(int i){
-		return contain.get(i) ; 
+	public T pop(){
+		if( index == -1 ){
+			return null ; 
+		}
+		return contain.get(index--) ; 
 	}
 	
-	public void add (T t){
-		contain.add(t); 
+	public void push (T t){
+		contain.add(++index, t); 
+	}
+	
+	public int length(){
+		return index +1 ; 
 	}
 
 }
