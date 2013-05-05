@@ -46,7 +46,7 @@ public class q1_6Test {
 		assertEquals( "[13, 9, 5, 1]" , Arrays.toString(rarr[0]));
 		assertEquals( "[14, 10, 6, 2]" , Arrays.toString(rarr[1]));
 		assertEquals( "[15, 11, 7, 3]" , Arrays.toString(rarr[2]));
-		assertEquals( "[16, 12, 8, 4]" , Arrays.toString(rarr[3]));
+		assertEquals( "[16, 12, 8, 4]" , Arrays.toString(rarr[3  ]));
 
 	}
 
